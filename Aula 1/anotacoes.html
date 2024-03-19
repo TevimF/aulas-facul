@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complexity Notations</title>
+</head>
+<body>
+    <h1>Complexity Notations</h1>
+    <p>Para analisar a eficiência de um algoritmo, estamos interessados em seu comportamento em relação à entrada.</p>
+    
+    <h2>Notação Big O</h2>
+    <p>A notação Big O é usada para descrever a eficiência ou complexidade de um algoritmo. Ela nos permite analisar o comportamento do algoritmo em relação ao tamanho da entrada. Ela é o limite superior, retrata o pior caso do algoritmo.</p>
+    
+    <h2>Notação Ômega</h2>
+    <p>A notação Ômega é usada para descrever a complexidade de tempo de um algoritmo em seu melhor caso. Ela nos permite analisar o comportamento do algoritmo em relação ao tamanho da entrada quando o algoritmo está executando de forma mais eficiente possível. Ela é o limite inferior.</p>
+    
+    <h2>Notação Theta</h2>
+    <p>A notação Theta é usada para descrever a complexidade de tempo de um algoritmo no caso médio. Ela nos permite analisar o comportamento do algoritmo em relação ao tamanho da entrada quando o algoritmo está executando em um caso médio.</p>
+    
+    <p>Então, se f(n) = Θ(g(n)), então f(n) = Ω(g(n)) e f(n) = O(g(n)).</p>
+    
+    <h2>Tabela de Propriedades da Notação Big O</h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>Fator constante</td>
+            <td>O algoritmo é afetado apenas pelo tamanho da entrada, NÃO POR CONSTANTES multiplicativas.</td>
+        </tr>
+        <tr>
+            <td>Soma de funções</td>
+            <td>A complexidade de tempo de um algoritmo é a soma das complexidades de tempo de suas partes.</td>
+        </tr>
+        <tr>
+            <td>Maior termo</td>
+            <td>A complexidade de tempo de um algoritmo é determinada pelo termo de maior ordem.</td>
+        </tr>
+        <tr>
+            <td>Ignorar termos menores</td>
+            <td>Termos de menor ordem e constantes são ignorados na notação Big O.</td>
+        </tr>
+        <tr>
+            <td>Multiplicação de funções</td>
+            <td>A complexidade de tempo de um algoritmo é a multiplicação das complexidades de tempo de suas partes.</td>
+        </tr>
+    </table>
+    
+    <p>Obs: A notação O é mais usada pois o pior caso é muito importante para prevenir o código de exceder o que é crucial para garantir que o código não exceda os limites de tempo ou espaço disponíveis, especialmente para entradas muito grandes.</p>
+
+    <h2>Classes de comportamento assintóticos</h2>
+    <h3>Constantes O(c)</h3>
+    <p>Se a complexidade de tempo de um algoritmo é O(1), então o algoritmo é dito ter complexidade de tempo constante. Isso significa que o tempo de execução do algoritmo é independente do tamanho da entrada. Se n dados forem inseridos, o algoritmo vai computar apenas uma operação.</p>
+    <h3>Logarítmico</h3>
+    <p>Se a complexidade de tempo de um algoritmo é O(log n), então o algoritmo é dito ter complexidade de tempo logarítmico. Isso significa que o tempo de execução do algoritmo é proporcional ao logaritmo do tamanho da entrada. Este algorítmo quebra o problema em problemas menores e é mais eficiente pois a função logaritmica cresce bem devagar.</p>
+    <h3>Linear</h3>
+    <p>Se a complexidade de tempo de um algoritmo é O(n), então o algoritmo é dito ter complexidade de tempo linear. Isso significa que o tempo de execução do algoritmo é proporcional ao tamanho da entrada. </p>
+    <h4>Observação</h4>
+    <p> Apartir de agora os algoritmos não são aconselhaveis para escalar</p>
+    <h3>Linearítmico ou log-linear</h3>
+    <p>Se a complexidade de tempo de um algoritmo é O(n log n), então o algoritmo é dito ter complexidade de tempo linearítmico. Isso significa que o tempo de execução do algoritmo é proporcional ao produto do tamanho da entrada e o logaritmo do tamanho da entrada.</p>
+    <h3>Quadrático</h3>
+    <p>Se a complexidade de tempo de um algoritmo é O(n^2), então o algoritmo é dito ter complexidade de tempo quadrática. Isso significa que o tempo de execução do algoritmo é proporcional ao quadrado do tamanho da entrada. É um algoritmo ruim para escalar pois cresce muito de acordo com a entrada de dados</p>
+    <h3>Cúbico</h3>
+    <p>Se a complexidade de tempo de um algoritmo é O(n^3), então o algoritmo é dito ter complexidade de tempo cúbica. Isso significa que o tempo de execução do algoritmo é proporcional ao cubo do tamanho da entrada. É um algoritmo muito ruim para escalar pois cresce muito de acordo com a entrada de dados</p>
+    <h3>Exponencial</h3>
+    <p>Se a complexidade de tempo de um algoritmo é O(2^n), então o algoritmo é dito ter complexidade de tempo exponencial. Isso significa que o tempo de execução do algoritmo é proporcional a 2 elevado a potência do tamanho da entrada. É um algoritmo muito ruim para escalar pois cresce muito de acordo com a entrada de dados<br> Exemplos: problema da satisfabilidade, problema da mochila 0/1 e etc <br> Os problemas que envolvem exponencial envolvem o problema do "arrependimento" onde todas as outras maneiras devem ser testadas para conseguir saber a melhor forma</p>
+
+</body>
+</html>
