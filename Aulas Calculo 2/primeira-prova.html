@@ -6,38 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Cálculo 2</h1>
-    <h2> Conteúdo para a primeira prova</h2>
-    <h3> Sequências</h3>
-    <p> Uma sequência é uma lista ordenada de termos.<br>
-    <b>Exemplo:</b> {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub> ...}, {a<sub>n</sub>}, {a<sub>n</sub>}<sup>∞</sup> <sub>n=1</sub> <br>
-        Intuitivamente, dizemos que uma sequência tem limite L se os termos da sequência se aproximam de L à medida que n cresce. <br>
-    <b>Exemplo:</b> {a<sub>n</sub>}<sup>∞</sup> = {1/n, n = 1, 2, 3, ...} tem limite 0 pois vai ficando cada vez menor e ao mesmo tempo nunca fica negativo, ou seja, nunca passa de 0. <br>
-        Se esse limite existe, dizemos que a sequência converge para L e escrevemos lim a<sub>n</sub> = L. <br>
-        Caso, contrário dizemos que a sequência diverge. <br>
-    </p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FNBU-67zwapr-frmwRAfww8L_5_tzm0rvw&usqp=CAU"> imagem de uma série convergente </img>
-    <p>Ainda sore uma sequência podemos dizer que:
-        <ul>
-            <li> Se converge ou não</li>
-            <li> Se é crescente ou decrescente</li>
-            <li> Se existem ferramentas que possam ajudar a concluir se a sequẽncia é ou não convergente ou divergente </li>
-        </ul>
-        <br>
-        Usamos a notação lim a<sub>n</sub> = ∞ para dizer que a sequência diverge para ∞ indicando que a medida que n cresce, o valor de a<sub>n</sub> também cresce ficando ilimitadamente enorme! <br>
-        Propriedades de Sequências para {a<sub>n</sub>} -> A e {b<sub>n</sub>} -> B: <br>
-        <ul>
-            <li> {a<sub>n</sub>} + {b<sub>n</sub>} = A + B  </li>
-            <li> {a<sub>n</sub>} - {b<sub>n</sub>} = A - B  </li>
-            <li> {a<sub>n</sub>} * {b<sub>n</sub>} = A * B  </li>
-            <li> {a<sub>n</sub>} / {b<sub>n</sub>} = A / B   desde que B seja diferente de zero. </li>
-        </ul>
-        <br>
-        
-    </p>
+    <h1>Cálculo 2 - Primeira Prova</h1>
+    <h2>Sequências</h2>
+    <h3>Exemplo de Sequência</h3>
+    <p>Uma sequência é uma lista ordenada de termos.</p>
 
+    <p><b>Exemplo:</b> {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub> ...}, {a<sub>n</sub>}, {a<sub>n</sub>}<sup>∞</sup> <sub>n=1</sub></p>
 
+    <p>Intuitivamente, dizemos que uma sequência tem limite L se os termos da sequência se aproximam de L à medida que n cresce.</p>
+    <p><b>Exemplo:</b> {a<sub>n</sub>}<sup>∞</sup> = {1/n, n = 1, 2, 3, ...} tem limite 0, pois vai ficando cada vez menor e ao mesmo tempo nunca fica negativo, ou seja, nunca passa de 0.</p>
+    <p>Se esse limite existe, dizemos que a sequência converge para L e escrevemos lim a<sub>n</sub> = L.<br>
+    Caso contrário, dizemos que a sequência diverge.</p>
+    <p><sub>Abaixo temos uma imagem exemplo sobre uma sequência convergente:</sub></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FNBU-67zwapr-frmwRAfww8L_5_tzm0rvw&usqp=CAU" width="400" alt="imagem de uma série convergente">
+    <p>Ainda sobre uma sequência, podemos concluir:</p>
+    <ul>
+        <li>Se converge ou não</li>
+        <li>Se é crescente ou decrescente</li>
+        <li>Se existem ferramentas que possam ajudar a concluir se a sequência é ou não convergente ou divergente</li>
+    </ul>
+    <p>Usamos a notação lim a<sub>n</sub> = ∞ para dizer que a sequência diverge para ∞, indicando que à medida que n cresce, o valor de a<sub>n</sub> também cresce ficando ilimitadamente enorme!</p>
+    <p>Propriedades de Sequências para {a<sub>n</sub>} -> A e {b<sub>n</sub>} -> B:</p>
+    <ul>
+        <li>{a<sub>n</sub>} + {b<sub>n</sub>} = A + B</li>
+        <li>{a<sub>n</sub>} - {b<sub>n</sub>} = A - B</li>
+        <li>{a<sub>n</sub>} * {b<sub>n</sub>} = A * B</li>
+        <li>{a<sub>n</sub>} / {b<sub>n</sub>} = A / B (desde que B seja diferente de zero)</li>
+    </ul>
 
+    <h3>Teorema do Confronto</h3>
+    <p>Para saber se a sequência converge ou diverge, podemos usar o <b>Teorema do Confronto</b>, que diz que se {a<sub>n</sub>} <= {b<sub>n</sub>} <= {c<sub>n</sub>} e lim a<sub>n</sub> = lim c<sub>n</sub> = L, então lim b<sub>n</sub> = L.<br>
+    Outro nome que damos a esse teorema é Teorema do Sanduíche. <br>
+    Se o limite dos 'pães' é o mesmo, então o limite do 'recheio' também é o mesmo.<br>
+    Entretanto, se os limites forem diferentes, então não podemos concluir nada.</p>
+    <p>Outro modo que podemos usar é o Teorema do Confronto para Limites, que diz que se lim a<sub>n</sub> = L e lim b<sub>n</sub> = M e {a<sub>n</sub>} <= {b<sub>n</sub>} <= {c<sub>n</sub>}, então L <= M.</p>
+    <p>Por exemplo:<br>
+    Se {a<sub>n</sub>} = cos(n)/n e {b<sub>n</sub>} = 1/n, então -1/n <= cos(n)/n <= 1/n. Como lim -1/n = lim 1/n = 0, então lim cos(n)/n = 0 pelo teorema do confronto.</p>
+    <img src="https://www.geogebra.org/resource/fspbgeuq/m2CLRLQqaAnA2xlv/material-fspbgeuq.png" width="400" alt="imagem de uma série convergente pelo teorema do confronto">
+    <h3>Teorema da Sequência Monótona</h3>
+    <p>Também podemos usar esse teorema que diz: <br> se {a<sub>n</sub>} é uma sequência crescente (ou decrescente... um ou o outro!) e também limitada, então ela converge.<br>
+    A sequência é crescente se a<sub>n+1</sub> >= a<sub>n</sub> para todo n e decrescente se a<sub>n+1</sub> <= a<sub>n</sub> para todo n, e é decrescente se podemos afirmar o contrário.<br>
+    E a sequência é monótona se, para valores grandes de n, ela sempre cresce ou sempre diminui (ou crescente ou decrescente).</p>
+    <p>A sequência é limitada se existe um limite superior e um limite inferior para a sequência.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLHWNsU5LYjVZTsKWt95Fq4bOGR0JkxSGsG9Jtc6u5Q&s" width="400" alt="imagem de uma série monótona">
+    <p>Obs: as sequências são para valores de {a<sub>n</sub>} para n>=1 </p>
+
+    <h2>Séries</h2>
+    <p>Uma série é uma soma de termos de uma sequência.</p>
+    <p><b>Exemplo:</b> S = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + a<sub>4</sub> + ... + a<sub>n</sub> no caso da série: {a<sub>n</sub>} </p>
+    <p>A fórmula genérica da soma dos termos de uma sequência é</p>
+    <p> S = ((n+1)*n)/2 </p>
+    <p> Se analisarmos essa formula, vemos que essa série diverge, ela explode para o infinito.</p>
+    <p> A série pode ser representada pelo símbolo Σ, que é a letra grega sigma.</p>
+    <p> <b>Exemplo:</b> <br> Dada a série {a<sub>n</sub>} = {1, 2, 3, 4, 5...} <br>
+    A série correspondente é S<sub>1</sub> = 1, S<sub>2</sub> = 1+2, S<sub>3</sub> = 1+2+3, S<sub>4</sub> = 1+2+3+4, S<sub>5</sub> = 1+2+3+4+5... <br>
+    Então {a<sub>n</sub>} = {n} e S<sub>n</sub> = Σn = n(n+1)/2 </p>
     </p>
+    
 </body>
 </html>
