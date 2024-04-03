@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +24,8 @@
         }
         blockquote {
             background-color: #f2f2f2;
-            padding-left : 20px;
-            padding-right: 20px;
+            padding-left : 15px;
+            padding-right: 15px;
             margin: 10px;
         }
         p {
@@ -70,7 +70,8 @@
         Usamos a notação lim a<sub>n</sub> = ∞ para dizer que a sequência diverge para ∞, indicando que à medida que n cresce, o valor de a<sub>n</sub> também cresce ficando ilimitadamente enorme!
     </p>
     <p>
-        Propriedades de Sequências para {a<sub>n</sub>} -> A e {b<sub>n</sub>} -> B:</p>
+        Propriedades de Sequências para {a<sub>n</sub>} -> A e {b<sub>n</sub>} -> B:
+    </p>
     <ul>
         <li>{a<sub>n</sub>} + {b<sub>n</sub>} = A + B</li>
         <li>{a<sub>n</sub>} - {b<sub>n</sub>} = A - B</li>
@@ -80,26 +81,26 @@
 
     <h3>Teorema do Confronto</h3>
     <p>
-        Para saber se a sequência converge ou diverge, podemos usar o <b>Teorema do Confronto</b>, que diz que se {a<sub>n</sub>} &lt;= {b<sub>n</sub>} &lt;= {c<sub>n</sub>} e lim a<sub>n</sub> = lim c<sub>n</sub> = L, então lim b<sub>n</sub> = L.<br>
+        Para saber se a sequência converge ou diverge, podemos usar o <b>Teorema do Confronto</b>, que diz que se {a<sub>n</sub>}  {b<sub>n</sub>}  {c<sub>n</sub>} e lim a<sub>n</sub> = lim c<sub>n</sub> = L, então lim b<sub>n</sub> = L.<br>
     </p>
     <p>
         Outro nome que damos a esse teorema é Teorema do Sanduíche. <br>
         Se o limite dos 'pães' é o mesmo, então o limite do 'recheio' também é o mesmo.<br>
         Entretanto, se os limites forem diferentes, então não podemos concluir nada.
     </p>
-    <p>Outro modo que podemos usar é o Teorema do Confronto para Limites, que diz que se lim a<sub>n</sub> = L e lim b<sub>n</sub> = M e {a<sub>n</sub>} &lt;= {b<sub>n</sub>} &lt;= {c<sub>n</sub>}, então L &lt;= M.</p>
+    <p>Outro modo que podemos usar é o Teorema do Confronto para Limites, que diz que se lim a<sub>n</sub> = L e lim b<sub>n</sub> = M e {a<sub>n</sub>}  {b<sub>n</sub>}  {c<sub>n</sub>}, então L  M.</p>
     <blockquote>
         <b>Exemplo:</b><br>
-        Se {a<sub>n</sub>} = cos(n)/n e {b<sub>n</sub>} = 1/n, então -1/n &lt;= cos(n)/n &lt;= 1/n. Como lim -1/n = lim 1/n = 0, então lim cos(n)/n = 0 pelo teorema do confronto.
+        Se {a<sub>n</sub>} = cos(n)/n e {b<sub>n</sub>} = 1/n, então -1/n  cos(n)/n  1/n. Como lim -1/n = lim 1/n = 0, então lim cos(n)/n = 0 pelo teorema do confronto.
     </blockquote>
     <img src="https://www.geogebra.org/resource/fspbgeuq/m2CLRLQqaAnA2xlv/material-fspbgeuq.png" width="400" alt="imagem de uma série convergente pelo teorema do confronto">
     <h3>Teorema da Sequência Monótona</h3>
     <p>Também podemos usar esse teorema que diz: <br> se {a<sub>n</sub>} é uma sequência crescente (ou decrescente... um ou o outro!) e também limitada, então ela converge.<br>
-    A sequência é crescente se a<sub>n+1</sub> >= a<sub>n</sub> para todo n e decrescente se a<sub>n+1</sub> &lt;= a<sub>n</sub> para todo n, e é decrescente se podemos afirmar o contrário.<br>
+    A sequência é crescente se a<sub>n+1</sub>  a<sub>n</sub> para todo n e decrescente se a<sub>n+1</sub>  a<sub>n</sub> para todo n, e é decrescente se podemos afirmar o contrário.<br>
     E a sequência é monótona se, para valores grandes de n, ela sempre cresce ou sempre diminui (ou crescente ou decrescente).</p>
     <p>A sequência é limitada se existe um limite superior e um limite inferior para a sequência.</p>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLHWNsU5LYjVZTsKWt95Fq4bOGR0JkxSGsG9Jtc6u5Q&s" width="400" alt="imagem de uma série monótona">
-    <p>Obs: as sequências são para valores de {a<sub>n</sub>} para n>=1 </p>
+    <p>Obs: as sequências são para valores de {a<sub>n</sub>} para n1 </p>
 
     <h2>Séries</h2>
     <p>Uma série é uma soma de termos de uma sequência.</p>
@@ -140,11 +141,93 @@
     </p>
     <p>
         Sobre uma série infinita queremos saber se:
-        <ul>
-            <li>Converge ou não</li>
-            <li>Se é convergente, qual é o sua soma</li>
-            <li>Se existem instrumentos que nos permita tirar conclusões sobre a divergência ou convergência dela </li>
-        </ul>
     </p>
+    <ul>
+        <li>Converge ou não</li>
+        <li>Se é convergente, qual é o sua soma</li>
+        <li>Se existem instrumentos que nos permita tirar conclusões sobre a divergência ou convergência dela </li>
+    </ul>
+    
+    <p>
+        Uma série geométrica é uma série do tipo Σa<sub>(de n=0 até ∞)</sub> r<sup>n</sup> onde a<sub>1</sub> é o primeiro termo e r é a <b>razão</b> sa série.<br>
+        Sendo assim, sua <i>n</i>-ésima soma parcial é S<sub>n</sub> = 1 + r + r<sup>2</sup> + r<sup>3</sup> + ... + r<sup>n-1</sup> = <b>(1 - r<sup>n</sup>)/(1 - r)</b>.
+    </p>
+
+    <blockquote>
+        <b>Demonstração:</b> <br>
+        Considere uma série geométrica finita com o primeiro termo <i>a</i> e a razão <i>r</i> por exemplo: <br>
+        S= a+ ar+ ar<sup>2</sup>+ ar<sup>3</sup>...+ ar<sup>n-1</sup> <br>
+        Agora vamos multiplicar a série por <i>r</i>:<br>
+        rS = ar+  ar<sup>2</sup>+ ar<sup>3</sup>...+ ar<sup>n</sup> <br>
+        Agora vamos subtrair a primeira da segunda: <br>
+        Rs - S= (ar+ ar<sup>2</sup>+ ar<sup>3</sup>...+  ar<sup>n-1</sup>+ ar<sup>n</sup>) - (a+ ar+ ar<sup>2</sup>+ ar<sup>3</sup>...+ ar<sup>n-1</sup>) <br>
+        então: (<s>ar+ ar<sup>2</sup>+ ar<sup>3</sup>...+  ar<sup>n-1</sup></s>+ ar<sup>n</sup>) - (a+ <s>ar+ ar<sup>2</sup>+ ar<sup>3</sup>...+ ar<sup>n-1</sup></s>) <br>
+        Que resulta em: rS - S = ar<sup>n</sup> - a <br>
+        Fatorando e simplificando temos: S(1-r) = ar<sup>n</sup> - a <br>
+        S =  (ar<sup>n</sup> - a)/(1-r) <br>
+        Como o <i>a</i> é comum em todos os termos podemos tirar ele pra fora ficando: <br>
+        <b>S = (1-r<sup>n</sup>)/(1-r)</b>
+    </blockquote>
+
+    <h3>Teorema (série geométrica de razão <i>r</i>)</h3>
+    <ul>
+        <li> Se |<i>r</i>| &lt; 1, então a série geométrica de razão <i>r</i> converge e sua soma será 1/(1-r) </li>
+        <li> Se |<i>r</i>| &lt; 1 então a série geométrica diverge. </li>
+    </ul>
+    <blockquote>
+        <b>Exemplo:</b><br>
+        Analisemos a série geométrica: <br>
+        1+ 1/2 + (1/2)<sup>2</sup>... +(1/2)<sup>n</sup> <br>
+        Vemos que o termo <i>a</i> é 1 e a razão é 1/2. <br>
+        Para calcular tal soma, usamos a fórmula citada anteriormente onde: <br>
+        S<sub>n</sub> = (1-(1/2)<sup>n</sup>)/(1-1/2) <br>
+        Simplificando temos: S<sub>n</sub> = 2(1-(<b>1/2</b>)<sup>n</sup>). <br>
+        ... Agora vamos analisar. <br>
+        Podemosa firmar que para qualquer valor dentro do parênteses (que está elevado a <i>n</i>) menor que 1, o segundo termo vai tender a zero pois vai diminuir cada vez mais.<br>
+        Em contrapartida, para qualquer valor de <i>r</i> maior que 1, a série vai crescer infinitamente e vai divergir.<br>
+        Nesse caso em específico, a série vai <b>convergir para 2</b> (pois a razao é menor que 1).
+    </blockquote>
+    <h3>Série telescopia</h3>
+    <img src="https://www.blogs.unicamp.br/wp-content/uploads/2019/06/telescope.png"  width="400" alt="Imagem ilustrativa de uma série telescopia">
+    <p>
+        S = (a<sub>1</sub> - a<sub>2</sub>) + (a<sub>2</sub> - a<sub>3</sub>)+... (a<sub>n-1</sub> - a<sub>n</sub>) + a<sub>n</sub> <br>
+        Essa série também é convergente pois os termos acabam se anulando.<br>
+        Portanto, a soma da série telescópica é simplesmente a soma do primeiro termo e do último termo da série original.
+    </p>
+    <h3>Série harmônica</h3>
+    Σ1/n = 1+ 1/2+ 1/3+ 1/4 +.....
+    <p> 
+        A série harmonica é divergente pois a sequencia não é limitada<br>
+        Para provar isso, podemos comparar  com a série geométrica 1/2<sup>n</sup> <br>
+        E agora usamos o teste da comparação: <br>
+        para n ≥ 1 temos 1/n ≥ 1/2<sup>n</sup><br>
+        Como a série harmonica modificada diverge para 2 e a série em questão é maior que ela, ela também deve divergir.
+    </p>
+    <h3>Teorema (Teste da divergência)</h3>
+    <p>
+        Dada a série ∑ a<sub>n</sub>, se lim<sub>n⭢∞</sub> a<sub>n</sub> não existir ou se existir e for diferente de zero, <B>a série diverge</B>.<br>
+        Pois, se é um somatório, e a tenência dos numeros não é diminuir tendendo a zero, a soma nunca vai parar e vai extourar divergindo.
+    </p> 
+    <p><b>Prpriedades:</b></p>
+    <ul>
+        <li> se a série <i>a</i> e a série <i>b</i> são convergentes, então a soma das duas também converge</li>
+        <li> ∑ <i>c</i>a<sub>n</sub> = <i>c</i>∑ a<sub>n</sub> 
+        </li>
+    </ul>
+    <h3>Teorema Teste da integral</h3>
+    <p>
+        Para f: [1,∞]⭢ R uma função contínua, positiva e decrescente, então ela converge se, e somente se, a integral dela converge.
+    </p>
+        <ul>
+            <li> se </li>
+        </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
