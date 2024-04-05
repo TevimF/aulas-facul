@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira prova de GAAL</title>
+</head>
+<body>
+    <h1>
+        Primeira prova de GAAL
+    </h1>
+    <h2>
+        Matrizes: operações e propriedades
+    </h2>
+    <p>
+        Uma matriz é praticamente uma tabela de números. Cada número é chamado de elemento da matriz indicado por A<sub>i</sub><sub>j</sub>. Onde i é o número da linha e j é o número da coluna. <br>
+        As matrizes podem ser <b>indentificadas</b> como: <br>
+        <ul>
+            <li> <b>Matrizes quadradas</b>, onde o numero de linhas é igual ao número colunas: A<sub>ij</sub> onde i=j </li>
+            <li> <b>Matrizes nulas</b>, onde todos os elementos são iguais a zero: A<sub>ij</sub> = 0 </li>
+            <li> <b>Matrizes diagonais</b>, onde todos os elementos fora da diagonal principal são iguais a zero: A<sub>ij</sub> = 0 se i != j </li>
+            <li> <b>Matrizes identidade</b>, onde todos os elementos da diagonal principal são iguais a 1: A<sub>ij</sub> = 1 se i = j </li>
+            <li> <b>Matrizes simétricas</b>, onde A = A<sup>T</sup> </li>
+        </ul>
+    </p>
+    <p>
+        <h2>As operações com matrizes são:</h2> 
+        <ul>
+            <li> <b>Adição</b>: A + B = C onde C<sub>ij</sub> = A<sub>ij</sub> + B<sub>ij</sub> <br>
+            <img src="https://escolaeducacao.com.br/wp-content/uploads/2020/04/soma-matrizes.jpg" width="200" alt="Matriz A + B = C">
+            </li>
+            <br>
+            <li> <b>Subtração</b>: A - B = C onde C<sub>ij</sub> = A<sub>ij</sub> - B<sub>ij</sub> <br>
+            <img src="https://sabermatematica.com.br/wp-content/uploads/2016/11/exemplo-de-subtracao-de-matrizes.png" width="350" alt="Matriz A - B = C">
+            </li>
+            <br>
+            <li> <b>Multiplicação</b>: A * B = C onde C<sub>ij</sub> = Σ A<sub>ik</sub> * B<sub>kj</sub> <br>
+            <img src="https://www.somatematica.com.br/emedio/matrizes/Image37.gif" width="400" alt="Matriz A * B = C">
+            </li>
+            <br>
+            <li> <b>Multiplicação por escalar</b>: k * A = B onde B<sub>ij</sub> = k * A<sub>ij</sub> <br>
+            <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/matriz-numero-real-multiplicacao-matrizes-matematica.jpg" width="200" alt="Matriz A multiplicada por escalar 2"> </li>
+            <br>
+    </p>
+    <p>
+        De acordo com essas operações, podemos seguir com algumas propriedades das matrizes: <br>
+    </p>
+    <h2>Propriedades das matrizes</h2>
+    <ul>
+        <li> <b>Associativa</b>: A + (B + C) = (A + B) + C </li>
+        <li> <b>Elemento neutro</b>: A + 0 = A </li>
+        <li> <b>Elemento simétricas</b>: A + (-A) = 0 </li>
+        <li> <b>Associativa</b>: A * (B * C) = (A * B) * C </li>
+        <li> <b>Distributiva</b>: A * (B + C) = A * B + A * C </li>    
+        <li> <b>Comutativa</b>: A + B = B + A </li>   
+        <li> <b>Elemento neutro da multiplicação</b>: A * I = A (matriz identidade) </li>
+        <li> <b>Elemento nulo da multiplicação</b>: A * 0 = 0 </li>
+    </ul>
+    
+    <h2>Metodo de Gauss Jordan</h2>
+    <p>
+        O método de Gauss Jordan é um método utilizado para resolver sistemas lineares. Ele consiste em transformar a matriz em uma matriz identidade. <br>
+        Para isso, é necessário realizar operações elementares nas linhas da matriz. <br>
+        <b>Operações elementares</b>: <br>
+        <ul>
+            <li> <b>Troca de linhas</b>: Trocar a posição de duas linhas da matriz </li>
+            <li> <b>Multiplicação de linha por escalar</b>: Multiplicar todos os elementos de uma linha por um escalar </li>
+            <li> <b>Soma de linhas</b>: Somar os elementos de uma linha com os elementos de outra linha </li>
+        </ul> <br>
+        <img src="https://i.ytimg.com/vi/dG7akik1wOU/maxresdefault.jpg" width="400" alt="Gauss Jordan">
+    </p>
+    <h2>Matriz inversa</h2>
+    <p>
+        A matriz inversa é uma matriz que, quando multiplicada por uma matriz, resulta na matriz identidade. <br>
+        <img src="https://matematicabasica.net/wp-content/uploads/2019/02/matriz-inversa-sistema-10.png" width="200" alt="Matriz inversa">
+    </p>
+    <p>
+        Para achar essa matriz inversa, é necessário realizar o método de Gauss Jordan com a matriz aumentada da identidade. <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRITO6rHYsM8uDPssDaSQveMSCKbN7QyN8hSQlGPC8RjQ&s" width="400" alt="Matriz aumentada">
+    </p>
+    <h2>Determinante</h2>
+    <p>
+        O determinante é um número que pode ser calculado a partir de uma matriz quadrada. <br>
+        Para matrizes de tamanho 3 ou menor, podemos usar o <b>método de Sarrus</b>. <br>
+        <img src="https://beduka.com/blog/wp-content/uploads/2019/09/multiplica%C3%A7%C3%A3o-da-regra-de-sarrus.jpg" width="200" alt="Regra de Sarrus">
+    </p>
+    <p>
+        Para matrizes de tamanho maior que 3, podemos usar o <b>método de Laplace</b>. <br>
+        Assim, escolhemos um cofator e multiplicamos pela matriz que sobrou. <br>
+        <img src="https://i.ytimg.com/vi/JXo9llm9lkM/maxresdefault.jpg" width="400" alt="Regra de Laplace"> <br>
+        O resultado da determinante é um numero especifico. <br>
+        Se ele for zero, a matriz é linearmente dependente. <br>
+    </p>
+</body>
+</html>
