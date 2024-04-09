@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quicksort</h1>
+    <p>Quicksort é um algoritmo de ordenação muito eficiente, inventado por C.A.R. Hoare em 1960, que utiliza a estratégia de divisão e conquista. A estratégia consiste em rearranjar as chaves de modo que as chaves "menores" estejam antes das chaves "maiores". Em seguida o algoritmo ordena as duas partições recursivamente. O passo base da recursão são as instâncias com zero ou um elemento.</p>
+    <p>Diferente do mergesort, o vetor não é necessariamente dividido ao meio. O quicksort escolhe um elemento do vetor (pivô) e rearranja o vetor de forma que todos os elementos anteriores ao pivô sejam menores que ele, e todos os elementos posteriores ao pivô sejam maiores que ele. Em seguida, o quicksort é aplicado recursivamente nas duas metades resultantes.</p>
+    <h3>Algoritmo para o particionamento</h3>
+    <ol>
+        <li>Escolha Arbritariamente um <b>pivo</b> x.</li>
+        <li>Reorganize o vetor de forma que todos os elementos menores que x estejam a esquerda de x e todos os elementos maiores que x estejam a direita de x.</li>
+        <li>Retorne o índice de x.</li>
+    </ol>
+    <h3>Função do quicksort em C++</h3>
+    <blockquote>
+        <code>
+            void quicksort(int *v, int inicio, int fim) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;int i, j, pivo, aux;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;i = inicio;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;j = fim-1;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;pivo = v[(inicio + fim) / 2];<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;while(i &lt;= j) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(v[i] &lt; pivo && i &lt; fim) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(v[j] > pivo && j > inicio) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j--;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i &lt; = j) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aux = v[i
+        </code>
+    </blockquote> 
+    <ul> <b>vantagens</b>
+        <li>É um algoritmo muito eficiente para vetores grandes.</li>
+        <li>É um algoritmo de ordenação in-place, ou seja, não requer memória adicional.</li>
+        <li>É um algoritmo estável.</li>
+        <li>Precisa apenas de uma pequena pilha</li>
+        <li>Requer cerca de n log n comparações em média</li>
+    </ul>
+
+    <ul> <b>desvantagens</b>
+        <li>Se o vetor já estiver ordenado, o quicksort terá desempenho ruim.</li>
+        <li>Se o pivô for escolhido de forma inadequada, o quicksort terá desempenho ruim.</li>
+        <li>Se o vetor tiver muitos elementos repetidos, o quicksort terá desempenho ruim.</li>
+    </ul>
+
+    <ul> <b> melhorias</b>
+        <li>Escolher o pivô de forma mais inteligente.Uma mediana de 3 evitaria o pior caso</li>
+        <li>Usar o insertion sort para vetores pequenos.</li>
+        <li>Usar o mergesort para vetores grandes.</li>
+        <li>Quicksort não recursivo para evitar o custo de varias chamadas</li>
+    </ul>
+</html>
